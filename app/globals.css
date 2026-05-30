@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Satoshi — exact woff2 files from backgrounds.supply source.html */
+@font-face { font-family: "Satoshi"; src: url("https://framerusercontent.com/third-party-assets/fontshare/wf/TTX2Z3BF3P6Y5BQT3IV2VNOK6FL22KUT/7QYRJOI3JIMYHGY6CH7SOIFRQLZOLNJ6/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2"); font-display: swap; font-style: normal; font-weight: 400 }
+@font-face { font-family: "Satoshi"; src: url("https://framerusercontent.com/third-party-assets/fontshare/wf/P2LQKHE6KA6ZP4AAGN72KDWMHH6ZH3TA/ZC32TK2P7FPS5GFTL46EU6KQJA24ZYDB/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2"); font-display: swap; font-style: normal; font-weight: 500 }
+@font-face { font-family: "Satoshi"; src: url("https://framerusercontent.com/third-party-assets/fontshare/wf/LAFFD4SDUCDVQEXFPDC7C53EQ4ZELWQI/PXCT3G6LO6ICM5I3NTYENYPWJAECAWDD/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff2"); font-display: swap; font-style: normal; font-weight: 700 }
+@font-face { font-family: "Satoshi"; src: url("https://framerusercontent.com/third-party-assets/fontshare/wf/NHPGVFYUXYXE33DZ75OIT4JFGHITX5PE/PSUTMASCDJTVPERDYJZPN23BVUFUCQIF/J64QX5IPOHK56I2KYUNBQ5M2XWZEYKYX.woff2"); font-display: swap; font-style: normal; font-weight: 900 }
+
+/* Editor's Note — exact woff2 files from backgrounds.supply source.html */
+@font-face { font-family: "Editors Note"; src: url("https://framerusercontent.com/assets/OUR590CpWh1n8RYmbSheGt1FtM.woff2"); font-display: swap; font-style: italic; font-weight: 400 }
+@font-face { font-family: "Editors Note"; src: url("https://framerusercontent.com/assets/hmvpG6eYVwbujwdSiF7QiQpZpR4.woff2"); font-display: swap; font-style: normal; font-weight: 500 }
+@font-face { font-family: "Editors Note"; src: url("https://framerusercontent.com/assets/7eBEeV1FP3dKYg9pdHJ2ATfDkQ.woff2"); font-display: swap; font-style: italic; font-weight: 500 }
+
+@layer base {
+  html { scroll-behavior: auto; }
+  body {
+    font-family: "Satoshi", system-ui, sans-serif;
+    font-weight: 500;
+    background: #fff;
+    color: #0a0a0a;
+    -webkit-font-smoothing: antialiased;
+  }
+  * { box-sizing: border-box; }
+  a { text-decoration: none; color: inherit; }
+}
+
+.italic-accent {
+  font-family: "Editors Note", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+.reveal-delay-4 { transition-delay: 0.32s; }
+
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+.lenis.lenis-scrolling iframe { pointer-events: none; }
