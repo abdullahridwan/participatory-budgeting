@@ -9,8 +9,8 @@ export default function WhatIsPB() {
   useScrollReveal(sectionRef);
 
   return (
-    <section id="what-is-pb" ref={sectionRef} style={{ padding: "120px 24px", background: "#fff", borderTop: "1px solid #e5e5e5" }}>
-      <div style={{ maxWidth: "1100px", margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
+    <section id="what-is-pb" ref={sectionRef} className="py-16 md:py-[120px] px-5 md:px-6 bg-white border-t border-[#e5e5e5]">
+      <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center">
         <div>
           <p className="reveal" style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0094FF", marginBottom: "20px" }}>What is PB</p>
           <h2 className="reveal reveal-delay-1" style={{ fontFamily: "Satoshi, system-ui, sans-serif", fontWeight: 900, fontSize: "clamp(32px, 4vw, 52px)", lineHeight: 1.05, letterSpacing: "-0.03em", color: "#0a0a0a", marginBottom: "24px" }}>
@@ -25,7 +25,7 @@ export default function WhatIsPB() {
           </p>
         </div>
 
-        <div className="reveal reveal-delay-2" style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+        <div className="reveal reveal-delay-2 flex flex-col gap-3">
           {[
             { label: "Founded", value: "NYC adopted PB in 2011, one of the first US cities to do so." },
             { label: "Who decides", value: "Any resident 11 or older can vote, regardless of citizenship or immigration status." },

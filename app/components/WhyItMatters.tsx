@@ -9,8 +9,8 @@ export default function WhyItMatters() {
   useScrollReveal(sectionRef);
 
   return (
-    <section id="why-it-matters" ref={sectionRef} style={{ padding: "120px 24px", background: "#fff", borderTop: "1px solid #e5e5e5" }}>
-      <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
+    <section id="why-it-matters" ref={sectionRef} className="py-16 md:py-[120px] px-5 md:px-6 bg-white border-t border-[#e5e5e5]">
+      <div className="max-w-[1100px] mx-auto">
         <p className="reveal" style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0094FF", marginBottom: "20px" }}>Why it Matters</p>
         <h2 className="reveal reveal-delay-1" style={{ fontFamily: "Satoshi, system-ui, sans-serif", fontWeight: 900, fontSize: "clamp(32px, 4vw, 52px)", lineHeight: 1.05, letterSpacing: "-0.03em", color: "#0a0a0a", marginBottom: "16px", maxWidth: "600px" }}>
           The Bronx deserves<br />
@@ -20,7 +20,7 @@ export default function WhyItMatters() {
           Low-income neighborhoods have historically had less influence over public spending decisions that directly affect their health and quality of life. PB changes that.
         </p>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "16px", marginBottom: "48px" }}>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
           {[
             { stat: "44%", label: "of Bronx residents live below 200% of the federal poverty line" },
             { stat: "2x", label: "higher hospitalization rates in low-income Bronx neighborhoods vs. wealthier ones" },

@@ -3,6 +3,7 @@ import "./globals.css";
 import Providers from "./providers";
 import SmoothScroll from "./components/SmoothScroll";
 import Nav from "./components/Nav";
+import ResearchBanner from "./components/ResearchBanner";
 
 export const metadata: Metadata = {
   title: "Participatory Budgeting in the Bronx",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Nav />
             {children}
           </SmoothScroll>
+          <ResearchBanner />
         </Providers>
       </body>
     </html>

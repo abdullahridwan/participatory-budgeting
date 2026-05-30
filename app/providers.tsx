@@ -22,6 +22,12 @@ function PostHogInit() {
         },
       });
 
+      // Register ?source= param as a session property on all events
+      const source = new URLSearchParams(window.location.search).get("source");
+      if (source) {
+        posthog.register({ source });
+      }
+
       // Capture initial pageview
       posthog.capture("$pageview");
     }
